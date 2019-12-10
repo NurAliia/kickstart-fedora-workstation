@@ -78,7 +78,7 @@ gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 EOF
 rpm --import https://dl-ssl.google.com/linux/linux_signing_key.pub
-sudo dnf install -y google-chrome-stable
+dnf install -y google-chrome-stable
 
 # Install Docker
 cat << EOF > /etc/yum.repos.d/docker-ce.repo
@@ -88,9 +88,9 @@ baseurl=https://download.docker.com/linux/fedora/$releasever/$basearch/stable
 enabled=1
 gpgcheck=1
 gpgkey=https://download.docker.com/linux/fedora/gpg
-
+EOF
 yum -q makecache fast
-sudo dnf install docker-ce
+dnf install docker-ce
 
 # Reboot After Installation
 reboot --eject
