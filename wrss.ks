@@ -61,6 +61,7 @@ docker
 # Post-installation Script
 %post
 systemctl enable docker.service
+%end
 
 # Reboot After Installation
 reboot --eject
