@@ -90,7 +90,7 @@ gpgcheck=1
 gpgkey=https://download.docker.com/linux/fedora/gpg
 
 yum -q makecache fast
-sudo dnf install -q -y install docker-ce
+sudo dnf install docker-ce
 
 # Reboot After Installation
 reboot --eject
