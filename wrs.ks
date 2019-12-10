@@ -67,19 +67,5 @@ docker
 
 %end
 
-# Post-installation Script
-%post
-# Install Google Chrome
-cat << EOF > /etc/yum.repos.d/google-chrome.repo
-[google-chrome]
-name=google-chrome
-baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
-enabled=1
-gpgcheck=1
-gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
-EOF
-rpm --import https://dl-ssl.google.com/linux/linux_signing_key.pub
-dnf install -y google-chrome-stable
-
 # Reboot After Installation
 reboot --eject
