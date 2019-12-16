@@ -27,7 +27,7 @@ clearpart --all --drives=sda
 firewall --enabled --ssh
 
 # Configure Network Interfaces
-network --onboot=yes --bootproto=dhcp --hostname=nura-laptop
+network --onboot=yes --bootproto=dhcp --hostname=nura-ssu
 
 # Configure Keyboard Layouts
 keyboard ru
