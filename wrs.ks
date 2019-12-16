@@ -21,7 +21,7 @@ part swap --size=10240 --ondrive=sda
 part / --size=8192 --grow --asprimary --ondrive=sda --fstype=xfs
 
 # Remove all existing partitions
-clearpart --all --drives=sda
+clearpart --all --initlabel --drives=sda
 
 # Configure Firewall
 firewall --enabled --ssh
