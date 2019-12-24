@@ -1,7 +1,6 @@
 [Unit]
 Description=start docker's jenkins and gerrit
-Requires=containers.service
-After=containers.service
+Requires=docker.service
 
 [Service]
 Type=simple
