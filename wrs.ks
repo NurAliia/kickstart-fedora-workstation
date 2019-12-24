@@ -72,8 +72,10 @@ docker
 sudo systemctl start docker
 sudo systemctl enable docker
 curl -o /usr/bin/containers.sh https://raw.githubusercontent.com/NurAliia/kickstart-fedora-workstation/develop/containers.sh
-chmod +x /usr/bin/containers.sh curl -o /etc/systemd/system/containers.service https://raw.githubusercontent.com/NurAliia/kickstart-fedora-workstation/develop/containers.service
+chmod +x /usr/bin/containers.sh 
+curl -o /etc/systemd/system/containers.service https://raw.githubusercontent.com/NurAliia/kickstart-fedora-workstation/develop/containers.service
 chmod 644 /etc/systemd/system/containers.service systemctl enable containers.service
+systemclt enable containers.service
 %end
 
 # Reboot After Installation
